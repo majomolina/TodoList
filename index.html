@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script defer src="index.js" > </script> 
+</head>
+<body>
+  <section>
+    <h2>  <span class="typed"></span> </h2>
+  <div class="app">
+    <div class="container">
+        <div id="editText" style="display: none; color: green;">Task processed successfully</div>
+        <div id="wrapper">
+            <input type="text" placeholder="To Do List">
+            <button id="add-btn"> Submit</button>
+        </div>
+        <div id="tasks">
+            <p id="pending-task">
+                You have <span class="count-value">0</span> task(s) to complete.
+            </p>
+        </div>
+    </div>
+    <div id="error">submit cannot be empty!</div>
+     </div>
+  </section>
+    
+</body>
+</html>

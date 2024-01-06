@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height:100vh;
+    background: linear-gradient(#5a9f5a 20%, #ffff 20% );
+}
+h2 {
+    font-family: 'Bad Script', cursive;
+    margin-left: 50px;
+    padding-top: 50px;
+    font-size:30px;
+}
+
+.app {
+   width: min(95vw, 500px) !important;
+   position: absolute;
+   margin: auto;
+   left: 0;
+   right: 0;
+   top: 200px;
+}
+.container {
+    padding: 2em 2.5em;
+background-color: #f1f8fb;
+box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+border-radius: 0.8em;
+}
+
+#wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 4fr ;
+    gap: 1em;
+}
+
+#wrapper input {
+   width: 100%;
+   background-color: transparent !important;
+   color: #111; 
+   font-size: 0.9em;
+   border: none;
+   border-bottom: 2px solid #d1d3d4 !important;
+   padding: 1em 0.5em; 
+}
+#wrapper input:focus{
+    outline: none !;
+    border-color:red !important;
+}
+#wrapper button {
+    position: relative;
+    border-radius: 0.5em;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #5a95ff;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+#tasks{
+   margin-top: 10px ; 
+   border-radius: 1px ;
+   width: 100% ;
+   position: relative;
+   padding: 1em 0.5em;
+}
+.task{
+    background-color: #ffff;
+    padding:  0.5em 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 8fr 2fr 2fr;
+    gap: 20px;
+    border-radius: 1px;
+    box-shadow: 1px;
+}
+#error {
+   text-align: center;
+   background-color: white;
+   color: red;
+   margin-top: 1.5em;
+   padding: 1em 0;
+   border-radius: 0.8em;
+   display: none;
+}
+.edit{
+    background-color: green;
+    color: white;
+}
+.delete{
+    background-color: red;
+    color: white;
+}
